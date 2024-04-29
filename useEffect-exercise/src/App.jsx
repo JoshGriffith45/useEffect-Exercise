@@ -24,7 +24,7 @@ function App() {
       <ul>
       {film.map((film) => {
           return (
-            <div>
+            <li key={film.id}>
               <h2>{film.title}</h2>
               <div>
                 <p>Released: {film.release_date}</p>
@@ -33,7 +33,7 @@ function App() {
               </div>
               
               
-            </div>
+            </li>
           )
       })}
       </ul>
