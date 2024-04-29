@@ -22,8 +22,19 @@ function App() {
     <>
       <h1>Studio Ghibli Films</h1>
       <ul>
-      {film.map((film, index) => {
-          return <li key={index}>{film.title} - {film.year}</li>
+      {film.map((film) => {
+          return (
+            <div>
+              <h2>{film.title}</h2>
+              <div>
+                <p>Released: {film.release_date}</p>
+                <p>Rotten Tomatoes score: {film.rt_score}</p>
+                <p>{film.description}</p>
+              </div>
+              
+              
+            </div>
+          )
       })}
       </ul>
     </>
