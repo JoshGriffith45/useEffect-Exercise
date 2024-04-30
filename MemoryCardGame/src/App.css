@@ -1,0 +1,21 @@
+#root {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+#yesButton {
+  margin-right: 1rem;
+}
+
+#bodyText {
+  padding-top: 15rem;
+}
+
